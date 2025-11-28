@@ -1,0 +1,21 @@
+Pre requisitos: Tener instalado SimulIDE, Virtual Serial Port Driver y Python
+
+1. Cargar el archivo de SimulIDE adjunto en SimulIDE
+
+2. Click derecho al Arduino, click en Mega328-109, click en load Firmware
+
+3. Seleccionan el archivo .hex adjunto, es la version compilada del codigo de nuestro Arduino, si por alguna razon quieren recompilar se hace con la app Arduino IDE.
+
+4. Abren Virtual Serial Port Driver.
+
+5. Le dan Pair, y conectan el puerto COM5 con el  COM6
+
+6. Desde la consola, en la ruta donde tengan el driver, ejecutan esto:
+
+python driver.py --port COM6 --baud 115200 --log-level DEBUG
+
+ 6.1 Puede que no funcione si no tienen instalado un paquete, es este: pip install pyserial
+
+7. Ya con el driver corriendo, iniciar simulacion del Arduino en SimulIDE, en la consola de python se deberia detectar que se inicio, eso significa que si se conectaron bien, ahi ya se pueden probar los botones
+
+

@@ -2,5 +2,5 @@
   "1": "C:/Program Files/Mozilla Firefox/firefox.exe",
   "2": "notepad.exe",
   "3": "C:/Windows/System32/calc.exe",
-  "4": ["/usr/bin/firefox", "https://www.arduino.cc"]
+  "4": "explorer.exe"
 }
